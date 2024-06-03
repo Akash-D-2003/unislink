@@ -10,6 +10,12 @@
   <body>
     <!-- Header start -->
     <header>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </label>
       <div class="contact">
         <div class="container">
           <ul class="contact-items">
@@ -20,14 +26,7 @@
           </ul>
         </div>
       </div>
-      <input type="checkbox" id="check" />
-      <label for="check">
-        <span class="menu-line"></span>
-        <span class="menu-line"></span>
-        <span class="menu-line"></span>
 
-        <!-- <img src="./images/icons8-menu-50.png" alt="icons8-menu-50" /> -->
-      </label>
       <nav class="nav-items">
         <div class="container">
           <div class="nav-bar">
@@ -477,13 +476,13 @@
         <h2 class="heading-medium">How Can We Help?</h2>
         <div class="help-card">
           <div class="card">
-            <img src="" alt="" />
+            <img src="./images/modular-build.png" alt="card-img" />
             <h3 class="heading-medium">I'd Like a Demo or Consult</h3>
             <h4 class="pragrap-light">We can show you around theturns.</h4>
             <a href="" class="btn">Learn More</a>
           </div>
           <div class="card">
-            <img src="" alt="" />
+            <img src="./images/high-touch.png" alt="card-img" />
             <h3 class="heading-medium">I'd Like a Demo or Consult</h3>
             <h4 class="pragrap-regular">We can show you around theturns.</h4>
             <a href="" class="btn blue-btn">Learn More</a>
@@ -493,26 +492,44 @@
     </section>
     <footer>
       <div class="container">
-        <div class="footer-box">
-          <div class="foodter-logo">
+        <div class="footer-box flex">
+          <div class="footer-logo">
             <img src="./images/logo.png" alt="" />
           </div>
-          <div class="quicK-link">
-            <h2>QUICK LINKS</h2>
+          <div class="quicK-link box">
+            <h2 class="pragrap-medium">QUICK LINKS</h2>
             <ul>
-              <li>
-                <a href="#!">About Us</a>
-                <a href="#!">Programs & Solutions</a>
-                <a href="#!">knoledge Center</a>
-                <a href="#!">Contact Us</a>
-              </li>
+              <li><a href="#!">About Us</a></li>
+              <li><a href="#!">Programs & Solutions</a></li>
+              <li><a href="#!">knoledge Center</a></li>
+              <li><a href="#!">Contact Us</a></li>
             </ul>
           </div>
-          <div class="contact">
-            <h2>GET IN TOUCH</h2>
-            <a href="mailto:info@unislink.com">Email:info@unislink.com</a>
+          <div class="contact box">
+            <h2 class="pragrap-medium">GET IN TOUCH</h2>
+            <a href="mailto:info@unislink.com"
+              >Email: <span> info@unislink.com</span></a
+            >
+            <a href="tel:(602) 374-3101">Main:(602) 374-3101</a>
+            <a href="tel:(602) 297-6754">Fax: (602) 297-6754</a>
+            <hr />
+            <h3 class="address pragrap-medium">
+              21410 N 19th Avenue, Ste.#511 phoeni,AZ 85027
+            </h3>
           </div>
-          <div class="mail-contact"></div>
+          <div class="mail-contact m-responcive box">
+            <h2 class="pragrap-medium">CONNECT WITH US</h2>
+            <h3 class="pragrap-medium">Sige up for email updates</h3>
+            <form action="" method="post">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+              />
+              <button type="button" class="btn">Sign up</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
